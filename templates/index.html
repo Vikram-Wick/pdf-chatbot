@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Chatbot (RAG)</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>PDF Chatbot</h1>
+      <button id="themeToggle" class="btn">Toggle Theme</button>
+    </header>
+
+    <main class="container">
+      <section class="upload-section" id="uploadSection">
+        <h2>Upload PDFs</h2>
+        <div id="dropArea" class="drop-area">
+          <p>Drag & drop PDF files here or click to select</p>
+          <input type="file" id="fileInput" accept="application/pdf" multiple />
+        </div>
+        <div class="progress">
+          <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+        </div>
+        <p id="uploadStatus" class="status"></p>
+      </section>
+
+      <section class="chat-section">
+        <h2>Chat</h2>
+        <div id="chatWindow" class="chat-window"></div>
+        <div id="thinking" class="thinking hidden">Thinking...</div>
+        <div class="chat-input">
+          <input
+            id="questionInput"
+            type="text"
+            placeholder="Ask a question about your PDFs"
+          />
+          <button id="sendBtn" class="btn primary">Send</button>
+          <button id="clearBtn" class="btn">Clear Chat</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span id="readyBadge" class="badge">Upload PDFs to start</span>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
