@@ -3,21 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PDF Chatbot (RAG)</title>
+    <title>PDF Chatbot — Turn PDFs into Answers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/static/css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
-    <header class="app-header">
-      <h1>PDF Chatbot</h1>
-      <button id="themeToggle" class="btn">Toggle Theme</button>
+    <!-- Top nav -->
+    <header class="app-header nav">
+      <div class="brand">
+        <div class="logo">📄🔍</div>
+        <div class="brand-text">
+          <strong>PDF Chatbot</strong>
+          <span class="brand-sub">RAG-powered insights</span>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn">Toggle Theme</button>
+      </div>
     </header>
 
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Turn your PDFs into instant, accurate answers</h1>
+        <p class="sub">
+          Delight clients with a professional, branded experience. Upload
+          documents and get sourced, trustworthy responses in seconds.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#uploadSection" class="btn primary">Get Started</a>
+          <span class="hero-note">No signup required</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"></div>
+    </section>
+
     <main class="container">
-      <section class="upload-section" id="uploadSection">
-        <h2>Upload PDFs</h2>
+      <!-- Upload card -->
+      <section class="upload-section card" id="uploadSection">
+        <div class="section-head">
+          <h2>Upload PDFs</h2>
+          <p class="muted">
+            Drag & drop your files below. We’ll process text, chunk
+            intelligently, and build a vector index per session.
+          </p>
+        </div>
         <div id="dropArea" class="drop-area">
-          <p>Drag & drop PDF files here or click to select</p>
+          <p><strong>Drop files here</strong> or click to select</p>
           <input type="file" id="fileInput" accept="application/pdf" multiple />
         </div>
         <div class="progress">
@@ -26,8 +65,43 @@
         <p id="uploadStatus" class="status"></p>
       </section>
 
-      <section class="chat-section">
-        <h2>Chat</h2>
+      <!-- Features -->
+      <section class="features card">
+        <div class="section-head">
+          <h2>Why clients love it</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feat-icon">🧠</div>
+            <h3>Accurate answers</h3>
+            <p>
+              Retrieval augmented generation ensures responses are grounded in
+              your documents.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feat-icon">⚡</div>
+            <h3>Fast setup</h3>
+            <p>
+              Upload and chat within seconds — nothing to configure for demos.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feat-icon">🔒</div>
+            <h3>Private sessions</h3>
+            <p>Per-session indexes keep content isolated and easy to reset.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chat card -->
+      <section class="chat-section card">
+        <div class="section-head">
+          <h2>Chat</h2>
+          <p class="muted">
+            Ask questions and receive answers with citations to your sources.
+          </p>
+        </div>
         <div id="chatWindow" class="chat-window"></div>
         <div id="thinking" class="thinking hidden">Thinking...</div>
         <div class="chat-input">
@@ -35,15 +109,19 @@
             id="questionInput"
             type="text"
             placeholder="Ask a question about your PDFs"
+            aria-label="Question"
           />
           <button id="sendBtn" class="btn primary">Send</button>
-          <button id="clearBtn" class="btn">Clear Chat</button>
+          <button id="clearBtn" class="btn">Clear</button>
         </div>
       </section>
     </main>
 
     <footer class="app-footer">
       <span id="readyBadge" class="badge">Upload PDFs to start</span>
+      <span class="footer-note"
+        >Built with LangChain, FAISS/Chroma, and Transformers</span
+      >
     </footer>
 
     <script src="/static/js/script.js"></script>
